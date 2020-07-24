@@ -1,5 +1,9 @@
 <template>
-  <Layout :show-logo="false">
+  <Layout :show-logo="true">
+
+    <!-- Header intro -->
+    <Teaser :show-title="true" />
+
     <!-- Author intro -->
     <Author :show-title="true" />
 
@@ -40,16 +44,18 @@ query {
 </page-query>
 
 <script>
+import Teaser from '~/components/Teaser.vue'
 import Author from '~/components/Author.vue'
 import PostCard from '~/components/PostCard.vue'
 
 export default {
   components: {
+    Teaser,
     Author,
     PostCard
   },
   metaInfo: {
-    title: 'Home'
+    title: 'El teu espai a la Vila de Gràcia'
   }
 }
 </script>

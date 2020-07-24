@@ -7,6 +7,7 @@
       </div>
 
       <div class="header__right">
+        <Menu />
         <ToggleTheme />
       </div>
     </header>
@@ -25,6 +26,7 @@
 
 <script>
 import Logo from '~/components/Logo.vue'
+import Menu from '~/components/Menu.vue'
 import ToggleTheme from '~/components/ToggleTheme.vue'
 
 export default {
@@ -33,6 +35,7 @@ export default {
   },
   components: {
     Logo,
+    Menu,
     ToggleTheme
   }
 }

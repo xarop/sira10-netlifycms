@@ -14,23 +14,8 @@
 
     <main class="main">
       <slot/>
+      <Form/>
     </main>
-
-    <form name="contact" method="POST" data-netlify="true">
-    <p>
-      <label>Your Name: <input type="text" name="name" /></label>   
-    </p>
-    <p>
-      <label>Your Email: <input type="email" name="email" /></label>
-    </p>
-    <p>
-    <p>
-      <label>Message: <textarea name="message"></textarea></label>
-    </p>
-    <p>
-      <button type="submit">Send</button>
-    </p>
-  </form>
 
 
     <footer class="footer">
@@ -45,6 +30,7 @@
 import Logo from '~/components/Logo.vue'
 import Menu from '~/components/Menu.vue'
 import ToggleTheme from '~/components/ToggleTheme.vue'
+import Form from '~/components/Form.vue'
 
 export default {
   props: {
@@ -53,7 +39,8 @@ export default {
   components: {
     Logo,
     Menu,
-    ToggleTheme
+    ToggleTheme,
+    Form
   }
 }
 </script>
